@@ -1,10 +1,17 @@
 import { animals } from '../data.js';
 import { findById } from '../utils.js';
 
-const animalList = document.getElementById('animal-list');
+const animalName = document.getElementById('animal-name');
+const animalImage = document.getElementById('animal-image');
+const animalQuote = document.getElementById('animal-quote');
 
-function renderAnimal(animals) {
-    const 
-}
+const params = new URLSearchParams(window.location.search);
 
-renderAnimal(animals);
+const animal = findById(params.get('id'), animals);
+
+animalName.textContent = animal.name;
+animalImage.src = `../assets/${animal.type}.svg`;
+animalQuote.textContent = animal.says;
+
+
+

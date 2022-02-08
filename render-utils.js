@@ -7,10 +7,10 @@ export function renderListItem(animal) {
     const img = document.createElement('img');
     img.src = `./assets/${animal.type}.svg`;
 
-    const a = document.createElement('a');
-    a.href = `./animals?id=${animal.id}`;
+    // const a = document.createElement('a');
+    // a.href = `./animals/?id=${animal.id}`;
 
-    a.appendChild(img);
+    // a.appendChild(img);
 
     const nameSpan = document.createElement('span');
     nameSpan.textContent = animal.name;
@@ -19,6 +19,8 @@ export function renderListItem(animal) {
     const span = document.createElement('span');
     span.textContent = animal.says;
 
-    div.append(a, nameSpan, span);
+    div.append(img, nameSpan, span);
     return div;
 }
+
+

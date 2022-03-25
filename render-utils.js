@@ -7,6 +7,11 @@ export function renderListItem(animal) {
     const img = document.createElement('img');
     img.src = `./assets/${animal.type}.svg`;
 
+    // const a = document.createElement('a');
+    // a.href = `./animals/?id=${animal.id}`;
+
+    // a.appendChild(img);
+
     const nameSpan = document.createElement('span');
     nameSpan.textContent = animal.name;
     nameSpan.classList.add('name');
@@ -17,3 +22,5 @@ export function renderListItem(animal) {
     div.append(img, nameSpan, span);
     return div;
 }
+
+

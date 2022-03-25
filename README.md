@@ -8,6 +8,20 @@
 
 Use [this template](https://github.com/alchemycodelab/half-baked-web-01-animal-farm) to get started.
 
+I) Build animals folder
+    A) index.html   CHECK
+        1) Link to animals.js   CHECK
+    B) animals.js
+        1) Import data  CHECK
+        2) Display animal info
+II) Animals are links   CHECK
+    A) Add a to rendered animals on main page   CHECK
+III) Animal page displays animal
+    A) H2
+    B) Picture
+    C) Quote
+
+
 ### Learning Objectives
 
 -   Render a list of items with a link to a detail page (list / detail pattern)
